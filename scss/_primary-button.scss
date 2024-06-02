@@ -1,0 +1,17 @@
+$button-primary-background:#3040E5;
+$button-font-color: white;
+
+@mixin primary-button{
+    border:none;
+    background-color: $button-primary-background;
+    color: $button-font-color;
+    border-radius: 66px;
+    width: 165px;
+    height: 40px;
+
+    //typography 
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 20px;
+}
