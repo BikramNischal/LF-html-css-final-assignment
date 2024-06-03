@@ -65,10 +65,14 @@ body {
   height: 24px;
   border-radius: 50%;
   border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-background-color);
 }
 .theme-button__icon {
-  width: 100%;
-  height: 100%;
+  line-height: 0;
 }
 
 .menu-button {
@@ -386,9 +390,9 @@ body {
 .footer .footer-text-button {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 100px;
+  gap: 36px;
 }
 .footer .footer-text-button .footer-text__big {
   font-family: var(--primary-font), sans-serif;
@@ -402,8 +406,4 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 26px;
-}
-
-.footer-text {
-  margin-bottom: 36px;
 }
