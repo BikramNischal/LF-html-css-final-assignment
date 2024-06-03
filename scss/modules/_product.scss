@@ -20,6 +20,7 @@
     background-color:var(--product-background-color);
 }
 
+
 .overview{
     display: flex;
     flex-direction: column;
@@ -150,6 +151,9 @@
         flex-direction: row-reverse;
     }
     
+    .product-details{
+        align-items: flex-start;
+    }
     
 
     .product-image{
