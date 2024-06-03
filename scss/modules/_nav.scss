@@ -9,6 +9,12 @@
     color: var(--primary-font-color);
 }
 
+
+// menu list 
+.menu{
+    display:none;
+}
+
 //nav bar theme toggle and menu button
 .theme-menu{
     display: flex;
@@ -53,4 +59,19 @@
 }
 
 
-// @media only screen and (min-width: )
+@media only screen and (min-width: 700px){
+    .menu-button{
+        display:none;
+    }
+
+    .menu{
+        list-style:none;
+        display:flex;
+        flex-direction: row;
+        gap: 56px;
+        
+        font-family: var(--primary-font), sans-serif;
+        font-size: 1rem;
+        line-height: 36px;
+    }
+}

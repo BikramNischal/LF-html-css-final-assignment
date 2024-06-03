@@ -12,6 +12,7 @@
 }
 
 .about{
+    max-width: 850px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -115,3 +116,49 @@
 
 }
 
+@media only screen and (min-width:700px){
+    .profile__name{
+        font-size: 1.5rem;
+        line-height: 25px;
+
+    }
+
+    .about__header{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .intro{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .contact-cv{
+        flex-direction: row;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px){
+
+    .home-page{
+        padding-bottom: 25vh;
+    }
+
+    .profile__name{
+        font-size: 2rem;
+    }
+
+    .about__header{
+        font-size: 3.5rem;
+        line-height: 85px;
+    }
+
+    .intro{
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+
+}

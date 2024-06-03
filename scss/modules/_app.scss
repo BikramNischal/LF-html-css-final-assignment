@@ -1,8 +1,9 @@
 
 .application{  
-    border-bottom: 1px solid var(--divider-color);
     padding-bottom: 27px;
     margin-bottom: 24px; 
+    flex: 1 1 0;
+    border-bottom: 1px solid var(--divider-color);
 
     &__icon-name{
         display: flex;
@@ -63,7 +64,18 @@
 
 }
 
-// .no-border{
-//     border-bottom: none;
-// }
 
+.application-list__lower{
+
+    .application:last-child{
+        border:none;
+    }
+
+}
+
+@media only screen and (min-width: 700px){
+    
+    .application{
+        border:none;
+    }
+}
