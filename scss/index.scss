@@ -11,4 +11,7 @@
 @use './modules/product';
 
 //application section styling
-@use 'app';
+@use 'tools';
+
+//footer section styling
+@use './modules/footer';

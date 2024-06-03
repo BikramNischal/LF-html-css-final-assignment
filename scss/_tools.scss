@@ -1,5 +1,4 @@
-$primary-font: "Montserrat", sans-serif;
-
+@use "./modules/app";
 
 .app-container{
     display: flex;
@@ -10,7 +9,7 @@ $primary-font: "Montserrat", sans-serif;
 }
 
 .section-header{
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -20,11 +19,9 @@ $primary-font: "Montserrat", sans-serif;
 .application-list{
     display: flex;
     flex-direction: column;
-}
+    margin: 40px 24px; 
 
-.app-icon-name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:10px;
+    &:last-child{
+        border-bottom: none;
+    }
 }

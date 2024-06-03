@@ -9,6 +9,7 @@
   --button-font-color: white;
   --tag-background-mobile-color: white;
   --tag-background-color: #F2F2F7;
+  --divider-color: #6F7279;
   --primary-font: "Montserrat";
   --secondary-font: "Roboto";
 }
@@ -299,6 +300,61 @@ body {
     content: url("../public/medica-desktop.svg");
   }
 }
+.application {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 27px;
+  margin-bottom: 24px;
+}
+.application__icon-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+.application__icon-name .application-icon__container {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  padding: 16px;
+  background-color: #ededed;
+}
+.application__icon-name .application-icon__container .application-icon__img {
+  width: 100%;
+  height: 100%;
+}
+.application__name {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 41px;
+}
+.application application__description {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.hidden-icon-container {
+  position: relative;
+}
+.hidden-icon-container .hidden-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  left: 55px;
+  z-index: -1;
+}
+.hidden-icon-container__img {
+  width: 100%;
+  height: 100%;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -308,7 +364,7 @@ body {
 }
 
 .section-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -318,11 +374,36 @@ body {
 .application-list {
   display: flex;
   flex-direction: column;
+  margin: 40px 24px;
+}
+.application-list:last-child {
+  border-bottom: none;
 }
 
-.app-icon-name {
+.footer {
+  padding: 24px;
+}
+.footer .footer-text-button {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.footer .footer-text-button .footer-text__big {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+.footer .footer-text-button .footer-text__small {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.footer-text {
+  margin-bottom: 36px;
 }

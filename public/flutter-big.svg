@@ -1,30 +1,30 @@
 <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_360_383)">
+<g filter="url(#filter0_d_545_383)">
 <rect x="26" y="27" width="68" height="68" rx="34" fill="white" shape-rendering="crispEdges"/>
-<g clip-path="url(#clip0_360_383)">
+<g clip-path="url(#clip0_545_383)">
 <path d="M63.3241 41L43 60.8949L49.2906 67.0526L75.9056 41.0001L63.3241 41Z" fill="#47C5FB"/>
 <path d="M63.1825 59.3466L52.3007 69.9987L58.615 76.272L64.894 70.1256L75.9059 59.3466H63.1825Z" fill="#47C5FB"/>
 <path d="M58.6149 76.272L63.395 80.9511H75.9056L64.8938 70.1256L58.6149 76.272Z" fill="#00569E"/>
 <path d="M52.2296 70.068L58.5204 63.9102L64.8936 70.1257L58.6146 76.272L52.2296 70.068Z" fill="#00B5F8"/>
-<path d="M58.6149 76.2721L63.8433 74.5738L64.3627 70.6458L58.6149 76.2721Z" fill="url(#paint0_linear_360_383)" fill-opacity="0.8"/>
+<path d="M58.6149 76.2721L63.8433 74.5738L64.3627 70.6458L58.6149 76.2721Z" fill="url(#paint0_linear_545_383)" fill-opacity="0.8"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d_360_383" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_545_383" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="5" dy="4"/>
 <feGaussianBlur stdDeviation="15.5"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_360_383"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_360_383" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_545_383"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_545_383" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_360_383" x1="58.8421" y1="72.1645" x2="62.9567" y2="73.6792" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_545_383" x1="58.8421" y1="72.1645" x2="62.9567" y2="73.6792" gradientUnits="userSpaceOnUse">
 <stop/>
 <stop offset="1" stop-opacity="0"/>
 </linearGradient>
-<clipPath id="clip0_360_383">
+<clipPath id="clip0_545_383">
 <rect width="33" height="40" fill="white" transform="translate(43 41)"/>
 </clipPath>
 </defs>
