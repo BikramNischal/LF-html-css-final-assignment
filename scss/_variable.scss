@@ -22,10 +22,17 @@
 
     //product theme 
     --tag-background-mobile-color: white;
-    --tag-background-color: #F2F2F7;
 
     // tools theme 
     --divider-color: #6F7279;
+
+    //long button background color 
+    --long-button-background-color: #F2F2F7;
+    --long-button-border-color:#d2d2d4;
+
+    //footer light theme
+    --footer-background-color: #F4F6FB;
+    
 
 
     //font-family
@@ -56,6 +63,13 @@
     --tag-background-mobile-color: #050519;
     --tag-background-color: #282C34; 
     --product-section-background-color: #282C34;
+
+    //tools section dark theme
+    --long-button-background-color: #3040E5;
+    --long-button-border-color: #3040E5;
+
+    //footer dark theme
+    --footer-background-color: #282C34;
     
 }
 
