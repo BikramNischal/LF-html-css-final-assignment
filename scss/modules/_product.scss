@@ -20,6 +20,12 @@
     background-color:var(--product-background-color);
 }
 
+.overview{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .product-tag{
     width:135px;
     height: 32px;
@@ -79,12 +85,18 @@
 .product-icon{
     width: 68px;
     height: 68px;
+    padding : 5px;
     border-radius: 50%;
+    background-color: #EDEDED;
     
     &__img{
         width: 100%;
         height: 100%;
     } 
+}
+
+.product-tag-desktop{
+    display:none;
 }
 
 .product__title{
@@ -115,8 +127,15 @@
 
 // Insert image fo project for desktop
 @media screen and (min-width: 400px) {
-    .product-tag{
+    .product-tag-mobile{
         display: none;
+    }
+    
+    .product-tag-desktop{
+        display:flex;
+        position: static;
+        z-index: 0;
+        background-color: var(--tag-background-desktop-color);
     }
     
 }
