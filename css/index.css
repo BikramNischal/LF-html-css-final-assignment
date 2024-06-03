@@ -1,3 +1,31 @@
+:root {
+  --primary-font-color: #000000;
+  --home-background-color: white;
+  --home-font-color: #000000;
+  --body-background-color:#F4F6FB;
+  --nav-menu-background-color: #F2F2F7;
+  --company-name-color: #6572F9;
+  --button-primary-background-color:#3040E5;
+  --button-font-color: white;
+  --tag-background-mobile-color: white;
+  --tag-background-color: #F2F2F7;
+  --primary-font: "Montserrat";
+  --secondary-font: "Roboto";
+}
+
+.dark-mode {
+  --primary-font-color: #FFFFFF;
+  --home-background-color:black;
+  --home-font-color:white;
+  --body-background-color:#050519;
+  --nav-menu-background-color:#282C34;
+  --company-name-color:rgba(255, 255, 255, 1);
+  --secondary-button-background-color: #050519;
+  --tag-background-mobile-color: #050519;
+  --tag-background-color: #282C34;
+  --product-section-background-color: #282C34;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,12 +36,19 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: var(--body-background-color);
+  color: var(--primary-font-color);
+}
+
 .nav-bar {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--body-background-color);
+  color: var(--primary-font-color);
 }
 
 .theme-menu {
@@ -38,9 +73,10 @@ html {
 .menu-button {
   width: 72px;
   height: 28px;
-  background-color: #F2F2F7;
+  background-color: var(--nav-menu-background-color);
   border-radius: 20px;
   border: none;
+  color: var(--primary-font-color);
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   line-height: 1.25rem;
@@ -88,13 +124,13 @@ html {
 
 .profile__name {
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 500;
   line-height: 23px;
 }
 
 .about__header {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 34px;
@@ -103,7 +139,7 @@ html {
 }
 
 .intro {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 26px;
@@ -111,7 +147,7 @@ html {
   margin-top: 16px;
 }
 .intro .company {
-  color: #6572F9;
+  color: var(--company-name-color);
 }
 
 .contact-cv {
@@ -122,27 +158,16 @@ html {
   gap: 23px;
   margin-top: 30px;
 }
-.contact-cv .primary-button {
-  border: none;
-  background-color: #3040E5;
-  color: white;
-  border-radius: 66px;
-  width: 165px;
-  height: 40px;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 20px;
-}
 .contact-cv .cv {
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 12px;
   border: none;
-  background-color: white;
-  font-family: "Roboto", sans-serif;
+  background-color: var(--body-background-color);
+  font-family: var(--secondary-font), sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 16px;
@@ -154,13 +179,18 @@ html {
   flex-direction: row;
   gap: 40px;
 }
-.socials .small-icon-container {
-  width: 24px;
-  height: 24px;
-}
-.socials .small-icon-container .small__icon {
-  width: 100%;
-  height: 100%;
+
+.primary-button {
+  border: none;
+  background-color: var(--button-primary-background-color);
+  color: var(--button-font-color);
+  border-radius: 66px;
+  width: 165px;
+  height: 40px;
+  font-family: var(--secondary-font), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .product {
@@ -181,8 +211,8 @@ html {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  font-family: "Montserrat", sans-serif;
+  background-color: var(--tag-background-color);
+  font-family: var(--primary-font), sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   position: absolute;
@@ -236,7 +266,7 @@ html {
 }
 
 .product__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font), sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 41px;
@@ -244,7 +274,7 @@ html {
 
 .product-description {
   margin: 26px 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font), sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 26px;
@@ -256,19 +286,6 @@ html {
   align-items: center;
   justify-content: center;
   gap: 35px;
-}
-
-.case-study-button {
-  border: none;
-  background-color: #3040E5;
-  color: white;
-  border-radius: 66px;
-  width: 165px;
-  height: 40px;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 20px;
 }
 
 @media screen and (min-width: 400px) {

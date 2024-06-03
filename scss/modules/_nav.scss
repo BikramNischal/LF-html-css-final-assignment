@@ -1,13 +1,12 @@
 
-$menu-background-light: #F2F2F7;
-
 .nav-bar{
     width: 100%;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: var(--body-background-color);  
+    color: var(--primary-font-color);
 }
 
 //nav bar theme toggle and menu button
@@ -35,9 +34,10 @@ $menu-background-light: #F2F2F7;
 .menu-button{
     width: 72px;
     height: 28px;
-    background-color: $menu-background-light;
+    background-color: var(--nav-menu-background-color);
     border-radius: 20px;
     border:none;
+    color: var(--primary-font-color);
 
     // typography
     font-family: "Montserrat", sans-serif;

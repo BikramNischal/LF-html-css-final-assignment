@@ -1,3 +1,5 @@
+// theme variables 
+@use 'variable';
 
 // base setup
 @use 'basic';
@@ -6,7 +8,7 @@
 @use 'home';
 
 //Product section Styling
-@use 'product';
+@use './modules/product';
 
 //application section styling
 @use 'app';

@@ -1,9 +1,5 @@
 @use './primary-button';
 
-$product-tag-background-light: white;
-$product-font-family: "Montserrat", sans-serif;
-
-
 
 .product{
     position:relative;
@@ -23,8 +19,8 @@ $product-font-family: "Montserrat", sans-serif;
     gap:10px;
     justify-content: center;
     align-items: center;
-    background-color: $product-tag-background-light;
-    font-family: $product-font-family;
+    background-color: var(--tag-background-color);
+    font-family: var(--primary-font), sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
 
@@ -90,7 +86,7 @@ $product-font-family: "Montserrat", sans-serif;
 }
 
 .product__title{
-    font-family: $product-font-family;
+    font-family: var(--primary-font), sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 41px;
@@ -99,7 +95,7 @@ $product-font-family: "Montserrat", sans-serif;
 // product-description typography
 .product-description{
     margin: 26px 0;
-    font-family: $product-font-family;
+    font-family: var(--primary-font), sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
     line-height: 26px;
@@ -112,10 +108,6 @@ $product-font-family: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
     gap: 35px;
-}
-
-.case-study-button{
-    @include primary-button.primary-button;
 }
 
 

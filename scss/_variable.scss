@@ -1,0 +1,60 @@
+
+
+:root{
+    //body font color 
+    --primary-font-color: #000000; 
+    
+    //light theme/font background
+    --home-background-color: white;
+    --home-font-color: #000000;
+    --body-background-color:#F4F6FB; 
+
+    // nav bar theme variables
+    // background same as body background
+    --nav-menu-background-color: #F2F2F7;
+
+    //home page about variables
+    --company-name-color: #6572F9;
+
+    //primary button theme 
+    --button-primary-background-color:#3040E5;
+    --button-font-color: white;
+
+    //product theme 
+    --tag-background-mobile-color: white;
+    --tag-background-color: #F2F2F7;
+
+
+    //font-family
+    --primary-font: "Montserrat";
+    --secondary-font: "Roboto";
+}
+
+
+.dark-mode{
+    //font dark theme 
+    --primary-font-color: #FFFFFF;
+
+    // dark theme/font background
+    --home-background-color:black;
+    --home-font-color:white;
+    --body-background-color:#050519;
+
+    // nav dark theme 
+    //background color same as body
+    --nav-menu-background-color:#282C34;
+
+    //home page about variables
+    --company-name-color:rgba(255, 255, 255, 1);
+    --secondary-button-background-color: #050519;
+
+    
+    //product theme
+    --tag-background-mobile-color: #050519;
+    --tag-background-color: #282C34; 
+    --product-section-background-color: #282C34;
+    
+}
+
+
+// fonts family 

@@ -1,0 +1,15 @@
+
+.primary-button{
+    border:none;
+    background-color: var(--button-primary-background-color);
+    color: var(--button-font-color);
+    border-radius: 66px;
+    width: 165px;
+    height: 40px;
+
+    //typography 
+    font-family: var(--secondary-font), sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 20px;
+}

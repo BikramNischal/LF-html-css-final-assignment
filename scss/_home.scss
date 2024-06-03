@@ -1,13 +1,5 @@
 //navbar styling 
-@use 'nav';
-
-@use 'primary-button';
-@use 'small-icon';
-
-
-$primary-font: "Montserrat", sans-serif;
-$company-name-light: #6572F9;
-$secondary-button-background-light:white;
+@use './modules/nav';
 
 // first view of the page
 .home-page{
@@ -55,14 +47,14 @@ $secondary-button-background-light:white;
 
 .profile__name{
     font-size: 1rem;
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-weight: 500;
     line-height: 23px;
 }
 
 //Profession in about section
 .about__header{
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-size: 1.5rem;
     font-weight: 800;
     line-height: 34px;
@@ -72,7 +64,7 @@ $secondary-button-background-light:white;
 
 //introduction paragraph 
 .intro{
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 26px;
@@ -80,7 +72,7 @@ $secondary-button-background-light:white;
     margin-top: 16px;
 
     .company{
-        color: $company-name-light;
+        color: var(--company-name-color);
     }
     
 }
@@ -94,21 +86,18 @@ $secondary-button-background-light:white;
     gap:23px;
     margin-top: 30px;
 
-    .primary-button{
-        @include primary-button.primary-button;
-    }
-
     .cv{
+        padding: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 12px; 
         border:none;
-        background-color: $secondary-button-background-light;
+        background-color: var(--body-background-color);
 
         // typography
-        font-family: "Roboto", sans-serif ;
+        font-family: var(--secondary-font), sans-serif ;
         font-size: 0.9rem;
         font-weight: 400;
         line-height: 16px;
@@ -123,8 +112,5 @@ $secondary-button-background-light:white;
     flex-direction: row;
     gap: 40px;
 
-    .small-icon-container{
-        @include small-icon.small-icon-container
-    }
 }
 
