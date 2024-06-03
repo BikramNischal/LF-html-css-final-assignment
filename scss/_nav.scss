@@ -1,5 +1,5 @@
 
-$menu-background: #F2F2F7;
+$menu-background-light: #F2F2F7;
 
 .nav-bar{
     width: 100%;
@@ -35,7 +35,7 @@ $menu-background: #F2F2F7;
 .menu-button{
     width: 72px;
     height: 28px;
-    background-color: $menu-background;
+    background-color: $menu-background-light;
     border-radius: 20px;
     border:none;
 

@@ -6,8 +6,9 @@
 
 
 $primary-font: "Montserrat", sans-serif;
-$light-company-name: #6572F9;
-$light-secondary-button-background:white;
+$company-name-light: #6572F9;
+$secondary-button-background-light:white;
+
 // first view of the page
 .home-page{
     height: 100vh;
@@ -79,7 +80,7 @@ $light-secondary-button-background:white;
     margin-top: 16px;
 
     .company{
-        color: $light-company-name;
+        color: $company-name-light;
     }
     
 }
@@ -104,7 +105,7 @@ $light-secondary-button-background:white;
         align-items: center;
         gap: 12px; 
         border:none;
-        background-color: $light-secondary-button-background;
+        background-color: $secondary-button-background-light;
 
         // typography
         font-family: "Roboto", sans-serif ;

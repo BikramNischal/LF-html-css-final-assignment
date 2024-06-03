@@ -162,3 +162,150 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 135px;
+}
+
+.product-tag {
+  width: 135px;
+  height: 32px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  left: 16px;
+}
+.product-tag__container {
+  width: 24px;
+  height: 24px;
+}
+.product-tag__icon {
+  width: 100%;
+  height: 100%;
+}
+
+#tuku-ternak .product-image-container {
+  content: url("../public/tuku-ternak-mob.svg");
+  width: 100%;
+}
+
+#event-id .product-image-container {
+  content: url("../public/ticketing-mob.svg");
+  width: 100%;
+}
+
+#medica .product-image-container {
+  content: url("../public/medica-mob.svg");
+  width: 100%;
+}
+
+.product-details {
+  padding: 24px;
+}
+
+.product-icon-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.product-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+.product-icon__img {
+  width: 100%;
+  height: 100%;
+}
+
+.product__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.product-description {
+  margin: 26px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 26px;
+}
+
+.tools-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.case-study-button {
+  border: none;
+  background-color: #3040E5;
+  color: white;
+  border-radius: 66px;
+  width: 165px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 400px) {
+  #tuku-ternak .product-image-container {
+    content: url("../public/tuku-ternak-desktop.svg");
+  }
+  #event-id .product-image-container {
+    content: url("../public/ticketing-desktop.svg");
+  }
+  #medica .product-image-container {
+    content: url("../public/medica-desktop.svg");
+  }
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.section-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.application-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-icon-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
