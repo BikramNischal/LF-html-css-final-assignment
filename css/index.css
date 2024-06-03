@@ -2,12 +2,14 @@
   --primary-font-color: #000000;
   --home-background-color: white;
   --home-font-color: #000000;
-  --body-background-color:#F4F6FB;
+  --body-background-color:white;
   --nav-menu-background-color: #F2F2F7;
   --company-name-color: #6572F9;
   --button-primary-background-color:#3040E5;
   --button-font-color: white;
   --tag-background-mobile-color: white;
+  --product-section-background-color: #F4F6FB;
+  --product-background-color: white;
   --divider-color: #6F7279;
   --long-button-background-color: #F2F2F7;
   --long-button-border-color:#d2d2d4;
@@ -27,6 +29,7 @@
   --tag-background-mobile-color: #050519;
   --tag-background-color: #282C34;
   --product-section-background-color: #282C34;
+  --product-background-color: black;
   --long-button-background-color: #3040E5;
   --long-button-border-color: #3040E5;
   --footer-background-color: #282C34;
@@ -204,6 +207,15 @@ body {
   line-height: 20px;
 }
 
+.products-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--product-background-color);
+}
+
 .product {
   position: relative;
   display: flex;
@@ -211,6 +223,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 135px;
+  max-width: 1150px;
+  background-color: var(--product-background-color);
 }
 
 .product-tag {
@@ -228,8 +242,8 @@ body {
   font-weight: 500;
   position: absolute;
   z-index: 1;
-  top: 16px;
-  left: 16px;
+  top: 24px;
+  left: 24px;
 }
 .product-tag__container {
   width: 24px;
@@ -240,23 +254,18 @@ body {
   height: 100%;
 }
 
-#tuku-ternak .product-image-container {
-  content: url("../public/tuku-ternak-mob.svg");
+.product-image__container {
   width: 100%;
-}
-
-#event-id .product-image-container {
-  content: url("../public/ticketing-mob.svg");
-  width: 100%;
-}
-
-#medica .product-image-container {
-  content: url("../public/medica-mob.svg");
-  width: 100%;
+  min-width: 550px;
 }
 
 .product-details {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-icon-title {
@@ -299,15 +308,20 @@ body {
   gap: 35px;
 }
 
-@media screen and (min-width: 600px) {
-  #tuku-ternak .product-image-container {
-    content: url("../public/tuku-ternak-desktop.svg");
+@media screen and (min-width: 400px) {
+  .product-tag {
+    display: none;
   }
-  #event-id .product-image-container {
-    content: url("../public/ticketing-desktop.svg");
+}
+@media screen and (min-width: 700px) {
+  .products-list {
+    background-color: var(--product-section-background-color);
   }
-  #medica .product-image-container {
-    content: url("../public/medica-desktop.svg");
+  .product {
+    flex-direction: row-reverse;
+  }
+  .product-image {
+    width: 50%;
   }
 }
 .application {

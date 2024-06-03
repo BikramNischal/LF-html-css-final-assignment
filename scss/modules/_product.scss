@@ -1,5 +1,13 @@
 @use './primary-button';
 
+.products-list{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--product-background-color);
+}
 
 .product{
     position:relative;
@@ -8,6 +16,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 135px;
+    max-width: 1150px;
+    background-color:var(--product-background-color);
 }
 
 .product-tag{
@@ -24,11 +34,11 @@
     font-size: 0.9rem;
     font-weight: 500;
 
-    //positionk
+    //position
     position:absolute;
     z-index: 1;
-    top:16px;
-    left:16px;
+    top:24px;
+    left:24px;
 
     &__container{
         width:24px;
@@ -42,31 +52,19 @@
     
 }
 
-// Insert image of project for mobile 
-#tuku-ternak .product-image-container{
-    content: url("../public/tuku-ternak-mob.svg");
+.product-image__container{
     width: 100%;
-}
-
-.product-img__container{
-    width: 100%;
-}
-
-// Insert image of project for mobile 
-#event-id .product-image-container{
-    content: url("../public/ticketing-mob.svg");
-    width: 100%;
-}
-
-// Insert image of project for mobile 
-#medica .product-image-container{
-    content: url("../public/medica-mob.svg");
-    width: 100%;
+    min-width: 550px;
 }
 
 //product details wrapper
 .product-details{
     padding: 24px;
+    display:flex;
+    flex-direction: column;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
 }
 
 // wrapper container for product icon and title
@@ -116,21 +114,26 @@
 
 
 // Insert image fo project for desktop
-@media screen and (min-width: 600px) {
-    #tuku-ternak .product-image-container{
-        content: url("../public/tuku-ternak-desktop.svg");
-    }
-
-    #event-id .product-image-container{
-        content: url("../public/ticketing-desktop.svg");
+@media screen and (min-width: 400px) {
+    .product-tag{
+        display: none;
     }
     
-    #medica .product-image-container{
-        content: url("../public/medica-desktop.svg");
+}
+
+@media screen and (min-width: 700px){
+
+    .products-list{
+        background-color:var(--product-section-background-color);
     }
 
-    // .product-tag{
-    //     display: none;
-    // }
+    .product{
+        flex-direction: row-reverse;
+    }
     
+    
+
+    .product-image{
+        width: 50%;
+    }
 }
