@@ -52,6 +52,11 @@ body {
   color: var(--primary-font-color);
 }
 
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
 .nav-bar {
   width: 100%;
   display: flex;
@@ -75,11 +80,11 @@ body {
 }
 
 .theme-button {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
-  font-size: 24px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;

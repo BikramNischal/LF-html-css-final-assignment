@@ -9,11 +9,11 @@ const themeToggleBtn = document.querySelector(".theme-button");
 function themeToggle(){
     if(body.classList.length){
         //change button icon dark
-        themeToggleBtn.textContent= "🌑"
+        themeToggleBtn.textContent="🌚" 
         body.classList.toggle("dark-mode");
     } else {
         //change button icon to light
-        themeToggleBtn.textContent= "☀️️";
+        themeToggleBtn.textContent= "️🌝";
         body.classList.toggle("dark-mode");
     }
 }
