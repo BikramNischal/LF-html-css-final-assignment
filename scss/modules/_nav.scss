@@ -34,11 +34,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    line-height: 0;
     background-color: var(--body-background-color);
-
-    &__icon{
-        line-height:0;
-    }
 
 }
 

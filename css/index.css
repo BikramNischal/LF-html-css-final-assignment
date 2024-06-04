@@ -83,10 +83,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--body-background-color);
-}
-.theme-button__icon {
   line-height: 0;
+  background-color: var(--body-background-color);
 }
 
 .menu-button {
@@ -317,6 +315,11 @@ body {
 .product-image__container {
   width: 100%;
   min-width: 550px;
+  object-fit: cover;
+}
+
+.product-image__img {
+  object-fit: cover;
 }
 
 .product-details {
