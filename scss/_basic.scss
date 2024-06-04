@@ -5,10 +5,17 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body{
     background-color: var(--body-background-color);
     color: var(--primary-font-color);
+}
+
+
+@media only screen and (max:width: 1000px){
+    html{
+        font-size: 16px;
+    }
 }
