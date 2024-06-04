@@ -282,6 +282,7 @@ body {
   margin-bottom: 135px;
   max-width: 1150px;
   background-color: var(--product-background-color);
+  overflow: hidden;
 }
 
 .overview {
