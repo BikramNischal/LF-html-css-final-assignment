@@ -306,8 +306,8 @@ body {
   font-weight: 500;
   position: absolute;
   z-index: 1;
-  top: 24px;
-  left: 24px;
+  top: 48px;
+  left: 48px;
 }
 .product-tag__container {
   width: 24px;
@@ -383,7 +383,7 @@ body {
   gap: 35px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   .product-tag-mobile {
     display: none;
   }

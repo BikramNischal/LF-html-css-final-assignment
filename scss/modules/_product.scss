@@ -45,8 +45,8 @@
     //position
     position:absolute;
     z-index: 1;
-    top:24px;
-    left:24px;
+    top:48px;
+    left:48px;
 
     &__container{
         width:24px;
@@ -134,19 +134,19 @@
 
 
 // Insert image fo project for desktop
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
+
     .product-tag-mobile{
         display: none;
     }
-    
     .product-tag-desktop{
         display:flex;
         position: static;
         z-index: 0;
         background-color: var(--tag-background-desktop-color);
     }
-    
 }
+
 
 @media screen and (min-width: 700px){
 
