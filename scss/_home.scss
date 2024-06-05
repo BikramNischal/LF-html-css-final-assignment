@@ -157,9 +157,9 @@
 
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 100px){
     .home-page{
-        padding-bottom: 25vh;
+        padding-bottom: 20vh;
     }
 
     .profile__name{
@@ -175,6 +175,5 @@
         font-size: 1.25rem;
         line-height: 35px;
     }
-
 
 }
