@@ -12,4 +12,8 @@
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 20px;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }

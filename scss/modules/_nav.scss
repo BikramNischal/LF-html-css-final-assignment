@@ -37,6 +37,10 @@
     line-height: 0;
     background-color: var(--body-background-color);
 
+    &:hover{
+        transform:scale(1.2);
+    }
+
 }
 
 .menu-button{
@@ -53,7 +57,12 @@
     line-height: 1.25rem;
     font-weight: 500;
 
+    &:hover{
+        background-color: var(--hover-background-color);
+        transform:scale(1.2);
+    }
 }
+
 
 
 @media only screen and (min-width: 1000px){
@@ -70,5 +79,18 @@
         font-family: var(--primary-font), sans-serif;
         font-size: 1rem;
         line-height: 36px;
+
+       
+        &__item{
+            width: 100px;
+            height: 30px;
+            text-align:center;
+            border-radius: 20px;
+        } 
+        
+        &__item:hover{
+            background-color: var(--hover-background-color);
+            transform: scale(1.2);
+        }
     }
 }
