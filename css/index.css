@@ -69,6 +69,17 @@ body {
   color: var(--primary-font-color);
 }
 
+.biscuit-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
 .menu {
   display: none;
 }
