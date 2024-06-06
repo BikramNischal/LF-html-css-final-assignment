@@ -275,7 +275,6 @@ body {
 }
 @media only screen and (min-width: 1000px) {
   .home-page {
-    height: 100vh;
     padding-bottom: 10vh;
   }
   .profile__name {
